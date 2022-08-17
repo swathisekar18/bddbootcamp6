@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1">
+    <title>BOOK SALON APPOINTMENT</title>
+    <style>
+        .first-class {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+
+        }
+
+        .logo {
+            height: 200px;
+            width: 200px;
+        }
+
+        .content {
+            font-size: 30px;
+            text-align: center;
+            color: black;
+        }
+
+        .para {
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: justify;
+        }
+
+        .image-class {
+            display: inline-block;
+            width: 350px;
+            height: 350px;
+            margin: 20px;
+            position: relative;
+            vertical-align: middle;
+            max-height: 100%;
+            max-width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .outer {
+            text-align: center;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: green;
+        }
+
+        input[type=text], input[type=label],
+        select {
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline;
+        }
+
+        input[type=submit]:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-class">
+        <img class="logo" src="logo.png" alt="salon logo">
+    </div>
+    <div class="navbar">
+        <a href="salon-appt-css.html">Home</a>
+        <a href="#bookappointment">Book an appointment</a>
+    </div>
+
+    <div class="content">
+        <h2>Welcome to ONE salon Booking</h2>
+        <h3>Please fill the below form</h3>
+    </div>
+
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname">
+    <br>
+
+    <label for="service">Choose your Service:</label><br>
+    <input type="checkbox" id="service1" name="service1" value="haircut">
+    <label for="service1"> Haircut</label><br>
+    <input type="checkbox" id="service2" name="service2" value="coloring">
+    <label for="service2"> Coloring</label><br>
+    <input type="checkbox" id="service3" name="service3" value="trimming">
+    <label for="service3"> Trimming</label>
+    <br>
+
+    <label for="servicedate">Appointment Date:</label>
+    <input type="date" id="servicedate" name="servicedate">
+    <br>
+
+    <label for="servicetime">Time:</label>
+    <input type="time" id="servicetime" name="servicetime">
+    <br>
+
+    <label for="stylist">Stylist:</label>
+    <input list="stylist" name="stylist">
+    <datalist id="stylist">
+        <option value="Trisha">
+        <option value="Nayanthara">
+        <option value="Pooja Hegde">
+        <option value="Kirti Shetty">
+        <option value="Do it yourself">
+    </datalist>
+    <br>
+
+
+    <br>
+
+    <br><br>
+    <input type="submit" value="Book">
+    <input type="submit" value="Cancel">
+
+</body>
+
+</html>
